@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/css');
     eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.addPassthroughCopy('src/js');
+    eleventyConfig.addPassthroughCopy('src/admin');
     eleventyConfig.addFilter("postYear",(dateObj) => {
         return DateTime.fromJSDate(dateObj).toObject().year;
     })
