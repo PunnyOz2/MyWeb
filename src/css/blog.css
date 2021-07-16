@@ -2,4 +2,114 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section ul {
+    list-style: none;
+}
+
+.section ul li .card{
+    position: relative;
+    height: 450px;
+    width: 900px;
+    margin: 50px auto;
+    background-color: #FFF;
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    outline: 3.5px solid rgba(0, 0, 0, 0.671);
+}
+
+.card .thumbnail {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: -30px;
+    height: 320px;
+    width: 530px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+img.left {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.right {
+    margin-left: 590px;
+    margin-right: 20px;
+}
+  
+h1.title {
+    padding-top: 15px;
+    font-size: 1.3rem;
+    color: #4B4B4B;
+}
+
+.author {
+    background-color: #9ECAFF;
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+.author h2 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.separator {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+li .card h5 {
+    position: absolute;
+    left: 30px;
+    bottom: -120px;
+    font-size: 5.8rem;
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: gray;
+}
+
+li .card h6 {
+    position: absolute;
+    left: 30px;
+    bottom: -55px;
+    font-size: 2rem;
+    color: white;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: gray;
+}
+
+.fab {
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    background-color: #1875D0;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
 }

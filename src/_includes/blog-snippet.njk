@@ -1,0 +1,14 @@
+<li>
+    <div class="card">
+      <div class="thumbnail"><img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" class="left"></div>
+      <div class="right">
+        <h1 class="title">{{ post.data.title }}</h1>
+        <div class="author"><h2>{{ post.data.author }}</h2></div>
+      <div class="separator"></div>
+      <p>{{ post.data.description }}</p>
+      </div>
+      <h5>{{ post.date | postYear }}</h5>
+      <h6>{{ post.date | postDay }} / {{ post.date | postMonth }}</h6>
+      <a class="fab" href="{{ post.url }}"><i class="fa fa-arrow-down fa-3x"></i></a>
+    </div>
+</li>

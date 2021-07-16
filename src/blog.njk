@@ -4,6 +4,11 @@ layout: 'base.njk'
 css_include: /css/blog.css
 ---
 <div class="section">
-
+    <h1>Recent blogs</h1>
+    <ul>
+      {% for post in collections.blog | reverse %}
+        {% include 'blog-snippet.njk' %}
+      {% endfor %}
+    </ul>
 </div>
 

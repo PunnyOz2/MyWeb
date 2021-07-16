@@ -1,7 +1,13 @@
 ---
 title: Work
 layout: 'base.njk'
+css_include: /css/work.css
 ---
-<section>
-    This is work
-</section>
+<div class="section">
+    <h1>Recent works</h1>
+    <ul>
+      {% for post in collections.work | reverse %}
+        {% include 'article-snippet.njk' %}
+      {% endfor %}
+    </ul>
+</div>
