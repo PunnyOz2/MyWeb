@@ -17,10 +17,22 @@
     {% if js_include %}
     <script src="{{ js_include }}"></script>
     {% endif %}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     {% include 'header.njk' %}
     
     {{ content | safe }}
 </body>
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+</script>
 </html>
